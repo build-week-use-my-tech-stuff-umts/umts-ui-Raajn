@@ -7,6 +7,7 @@ body {
   height: 92vh;
   margin: 2% auto;
   max-width: 1600px;
+  place-items: center;
 }
 h1 {
   font-size: 4rem;
@@ -31,4 +32,23 @@ header nav a {
 }
 header nav a:hover {
   color: yellow;
+}
+.home {
+  width: 400px;
+  height: 200px;
+  max-width: 100%;
+  background: var(--bg2);
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.border {
+  display: flex;
+  max-width: 50%;
+  margin: 4%;
+  border: 20px solid;
+  border-image-source: linear-gradient(45deg, #008f68, #fae042);
+  border-image-slice: 60 30;
 }
