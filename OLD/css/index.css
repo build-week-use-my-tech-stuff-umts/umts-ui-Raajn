@@ -42,8 +42,6 @@ body {
   background-position: center;
   width: 100vw;
   height: 100vh;
-  margin: 2% auto;
-  margin-top: 0;
   max-width: 1600px;
   place-items: center;
   display: flex;
@@ -65,7 +63,6 @@ html {
 }
 h1 {
   font-size: 4rem;
-  margin: 0 auto !important;
 }
 .RenTechImg {
   background-repeat: no-repeat;
@@ -73,7 +70,6 @@ h1 {
   width: 310px;
   height: 80px;
   display: flex;
-  margin: auto 0;
 }
 header {
   display: flex;
@@ -81,6 +77,9 @@ header {
   align-items: center;
   text-align: center;
   width: 80vw;
+  min-height: 20vh;
+  position: relative;
+  top: 80px;
 }
 header nav {
   display: flex;
@@ -111,7 +110,7 @@ header nav a:hover {
 }
 .top {
   width: 65vw;
-  height: 100%;
+  height: 400px;
   max-width: 100%;
   background: var(--bg2);
   display: flex;
@@ -147,30 +146,4 @@ input {
   padding: 0 2%;
   font-size: 1.2rem;
   text-align: center;
-}
-.borderMid {
-  display: flex;
-  max-width: 100%;
-  margin: 2%;
-  border: 10px solid;
-  border-image-source: linear-gradient(45deg, #06728d, #58123e);
-  border-image-slice: 60 30;
-  border-image-source: linear-gradient(45deg, #58123e, #06728d);
-}
-.middle {
-  width: 85vw;
-  height: 300px;
-  background: var(--bg2);
-  align-items: center;
-  font-size: 2rem;
-  max-width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-.your-class {
-  width: 80vw;
-}
-.your-class img {
-  width: 15%;
-  height: 100px;
 }
