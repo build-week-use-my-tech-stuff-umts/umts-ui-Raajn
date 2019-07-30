@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
   <meta name="theme-color" content="#fafafa">
 
@@ -26,13 +28,13 @@
 <header>
   <!-- Add your site or application content here -->
 <div class = "RenTechImg">
-  <!-- Logo Image Here -->
+  <img src="img/rentech%20logo.png" alt="RenTech" class="RenTechImg"><!-- Logo Image Here -->
 </div>
-  <h1>RenTech Logo Here</h1>
+<!--  <h1>RenTech Logo Here</h1>-->
   <nav>
     <a href="#about">ABOUT US</a>
+    <a href="#contact">HOME</a>
     <a href="#contact">SIGN IN</a>
-    <a href="signup">SIGN UP</a>
   </nav>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -45,17 +47,46 @@
 
   <div class = "border">
     <div class="top">
-      <h2>CONTENT</h2>
+      <section>
+      <h2>RenTech</h2>
+      <h3>We have it, You need it!</h3>
+      <p>Here at RenTech, we provide the absolute best and most up-to-date technology rentals on the market.  From handheld cameras, to at-home computer servers, there is no competition for our prices, knowledge, and consistency.  Our trained team of developers and tech gurus are some of the best in the world.  We've spent years curating our collection of priceless technology, so that we may share the best parts of the world with those that have no need to spend hundreds of thousands of dollars on the best and most current equipment.  We provide full setup and maintenance for your rental duration. We also have 24/7 tech support just in case your equipment decides to brick mid use.  Feel free to reach out to any of our social media's, or simply send an email and we will get back to you within 24 hours. </p>
+      </section>
     </div>
   </div>
   <div class = "borderMid">
     <div class = "middle">
-      <h2>CONTENT</h2>
+      <div class="your-class">
+        <a href="#"><img src="img/audio.png" alt=""></a>
+        <a href="#"><img src="img/camera.png" alt=""></a>
+        <a href="#"><img src="img/computer.png" alt=""></a>
+        <a href="#"><img src="img/tv.png" alt=""></a>
+        <a href="#"><img src="img/other.png" alt=""></a>
+      </div>
+
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.your-class').slick({
+            setting-name: setting-value
+        });
+        });
+      </script>
+
     </div>
   </div>
     <div class = "border">
     <div class = "bottom">
-      <h2>CONTENT</h2>
+      <p>If you'd like to be included in our weekly newsletter, which often has deals on our rentals as well as up to date information on our latest products, please fill out your email address below!  Signing up earns you 5% off your first rental!</p>
+      <div class = "eletter">
+      <form action="#thankyou">
+        E-mail: <input type="email" name="emailaddress">
+        <input type="submit">
+      </form>
+      </div>
     </div>
   </div>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
