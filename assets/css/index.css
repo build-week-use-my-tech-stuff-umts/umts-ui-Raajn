@@ -486,12 +486,6 @@ li {
   .hero a.btn {
     padding: 15px 40px;
   }
-  .hero .background-image {
-    background-image: url('/img/heroM.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-  }
 }
 .arrowD {
   display: flex;
