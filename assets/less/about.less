@@ -14,26 +14,46 @@
   display: flex;
   align-content: center;
   margin: 1%;
+  @media screen and (max-width: 600px){
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    .truCenter();
+  }
 }
 .teamText {
   width: 35vw;
-  height: 70vh;
+  height: 40vh;
   margin-top: 20vh;
   font-size: .9rem;
+  @media screen and (max-width: 600px){
+    .truCenter();
+    flex-direction: column;
+    width: 60vh;
+    margin: 0;
+
+  }
 }
 
 .allTeamPics {
   width: 65vw;
+  margin: 4%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: center;
+  @media screen and (max-width: 600px){
+    margin: 0;
+    padding: 0;
+    .truCenter();
+    width: 75vw;
+  }
 }
 
 .allTeamPics img {
-  width: 60%;
-  margin: 3%;
-  padding: 1%;
+  width: 13vw;
+  margin: 5%;
+  padding: 2%;
   border: 1px dashed black;
 }
 
@@ -51,6 +71,9 @@
     &:hover {
       opacity: 1;
     }
+  }
+  img {
+    border-radius: 10px;
   }
 }
 
@@ -83,12 +106,15 @@
   width: 100vw;
   height: 100vh;
   .truCenter();
-  
+
 }
 
 .imgBio {
   .truCenter();
   flex-direction: column;
+}
+.imgBio img {
+  border-radius: 10px;
 }
 .imgSM {
   .truCenter();
@@ -102,7 +128,9 @@
   padding: 3%;
   color: white;
   width: 50%;
-
+  border: 2px dashed floralwhite;
+  background-color: rgba(106, 185, 255, 0.1);
+  border-radius: 100px;
     p {
       width: 80%;
 
