@@ -202,6 +202,8 @@ header h2 {
 }
 header nav {
   display: flex;
+  position: sticky;
+  top: 0;
 }
 header nav li {
   margin: 0 15px;
@@ -215,9 +217,6 @@ header nav li:last-child {
 @media (max-width: 1070px) {
   header {
     padding: 20px 50px;
-  }
-  header a {
-    font-size: 1rem;
   }
 }
 @media (max-width: 900px) {
@@ -298,5 +297,22 @@ header nav li:last-child {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+  }
+}
+.arrowD {
+  display: flex;
+  position: relative;
+  top: 25vh;
+}
+@media screen and (max-width: 900px) {
+  .arrowD {
+    top: 15vh;
+    transition: 1s;
+  }
+}
+@media screen and (max-width: 800px) {
+  .arrowD {
+    top: 13vh;
+    transition: 1s;
   }
 }
