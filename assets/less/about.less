@@ -78,3 +78,38 @@
     display: initial;
   }
 }
+
+.eachBio {
+  width: 100vw;
+  height: 100vh;
+  .truCenter();
+  
+}
+
+.imgBio {
+  .truCenter();
+  flex-direction: column;
+}
+.imgSM {
+  .truCenter();
+}
+
+.textBio {
+  .truCenter();
+  flex-direction: column;
+  line-height: 1.4;
+  margin: 3%;
+  padding: 3%;
+  color: white;
+  width: 50%;
+
+    p {
+      width: 80%;
+
+      &:hover {
+        transform: scale(1.4);
+        transition: 1s;
+        transition-delay: 250ms;
+      }
+    }
+}
