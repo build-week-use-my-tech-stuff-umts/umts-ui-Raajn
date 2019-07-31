@@ -1,0 +1,123 @@
+.features{
+  background-color: #384e77;
+}
+.features p {
+  color: whitesmoke;
+}
+
+ul.grid {
+  width: 70%;
+  display: flex;
+  padding-bottom: 4%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #384e77;
+}
+
+
+.gridBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #8bbeb2;
+  border: 3px dashed #0d0630;
+  margin: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.gridT {
+  display: flex;
+}
+.gridB{
+  display: flex;
+}
+.gridBox p {
+  margin: 0 2%;
+  line-height: 1;
+}
+
+.features .grid li{
+  padding: 0 10px;
+  flex-basis: 33%;
+  text-align: center;
+}
+
+.features .grid li i{
+  font-size: 50px;
+  color: #ef6f6c;
+  margin-bottom: 25px;
+}
+
+.features .grid li h4{
+  color: ghostwhite;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.features .grid li p{
+  margin: 0;
+}
+
+@media (max-width: 1000px){
+
+  .features .grid li{
+    flex-basis: 70%;
+    margin-bottom: 65px;
+  }
+
+  .features .grid li:last-child{
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (max-width: 600px){
+
+  .features .grid li{
+    flex-basis: 100%;
+  }
+
+}
+
+
+.contact{
+  background-color: lightslategray;
+}
+.contact p {
+  color: whitesmoke;
+}
+
+.contact form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: 800px;
+  width: 80%;
+}
+
+.contact form input{
+  padding: 15px;
+  flex: 1;
+  margin-right: 30px;
+  font-size: 18px;
+  color: #555;
+}
+
+.contact form .btn{
+  padding: 18px 42px;
+}
+
+
+@media (max-width: 800px){
+
+  .contact form input{
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+
+}

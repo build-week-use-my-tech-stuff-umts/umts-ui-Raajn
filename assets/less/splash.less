@@ -1,0 +1,108 @@
+.hero{
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+  @media screen and (max-width: 900px){
+    min-height: 80vh;
+  }
+}
+@media screen and (min-width: 800px) {
+  .hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .hero .background-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+  }
+}
+
+//.hero .background-image:after{
+//  content: '';
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  background-color: #414a4f;
+//  opacity: 0.40;
+//}
+
+.hero h1{
+  font: bold 60px 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.hero h3{
+  font: normal 28px 'Open Sans', sans-serif;
+  margin-bottom: 40px;
+}
+
+.hero a.btn{
+  padding: 20px 46px;
+}
+@media screen and (max-width: 900px){
+  .hero h1{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .hero{
+    min-height: 600px;
+  }
+
+  .hero h1{
+    font-size: 48px;
+  }
+
+  .hero h3{
+    font-size: 24px;
+  }
+
+  .hero a.btn{
+    padding: 15px 40px;
+  }
+
+  .hero .background-image {
+      background-image: url('/img/heroM.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+  }
+
+.arrowD {
+    display: flex;
+    position: relative;
+    top: 22vh;
+  a {
+    transition: 4s;
+    transition-delay: 3s;
+  }
+  @media screen and (max-width: 900px){
+    top: 13vh;
+    transition: 1s;
+  }
+  @media screen and (max-width: 800px){
+    top: 11vh;
+    transition: 1s;
+  }
+}
