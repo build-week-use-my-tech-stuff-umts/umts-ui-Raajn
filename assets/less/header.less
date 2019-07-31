@@ -10,6 +10,16 @@ header{
   color: #fff;
   padding: 35px 100px 0;
 }
+header img {
+  width: 100%;
+  @media (max-width: 1070px){
+    width: 75%;
+  }
+  @media (max-width: 900px){
+    width: 100%;
+    padding-top: 40px;
+  }
+}
 
 header h2{
   font-family: 'Quicksand', sans-serif;
@@ -33,16 +43,19 @@ header nav li:last-child{
 
 
 
-@media (max-width: 1000px){
+@media (max-width: 1070px){
   header{
     padding: 20px 50px;
+  }
+  header a {
+    font-size: 1rem;
   }
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 900px){
   header{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   header h2{

@@ -112,14 +112,13 @@ nav {
 }
 a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.4rem;
   color: inherit;
   cursor: pointer;
   opacity: 0.9;
 }
 a:hover {
   opacity: 1;
-  transform: scale(1.2, 2);
 }
 a.btn {
   color: #fff;
@@ -184,6 +183,20 @@ header {
   color: #fff;
   padding: 35px 100px 0;
 }
+header img {
+  width: 100%;
+}
+@media (max-width: 1070px) {
+  header img {
+    width: 75%;
+  }
+}
+@media (max-width: 900px) {
+  header img {
+    width: 100%;
+    padding-top: 40px;
+  }
+}
 header h2 {
   font-family: 'Quicksand', sans-serif;
 }
@@ -199,14 +212,17 @@ header nav li:first-child {
 header nav li:last-child {
   margin-right: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1070px) {
   header {
     padding: 20px 50px;
   }
+  header a {
+    font-size: 1rem;
+  }
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   header {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   header h2 {
     margin-bottom: 15px;
@@ -219,25 +235,34 @@ header nav li:last-child {
   color: #fff;
   text-align: center;
 }
-.hero .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-color: #2196F3;
-  z-index: -1;
+@media screen and (max-width: 900px) {
+  .hero {
+    min-height: 80vh;
+  }
 }
-.hero .background-image:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #414a4f;
-  opacity: 0.75;
+@media screen and (min-width: 800px) {
+  .hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 1070px) {
+  .hero .background-mobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-color: #2196F3;
+    z-index: -1;
+  }
 }
 .hero h1 {
   font: bold 60px 'Open Sans', sans-serif;
@@ -250,7 +275,12 @@ header nav li:last-child {
 .hero a.btn {
   padding: 20px 46px;
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 900px) {
+  .hero h1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
   .hero {
     min-height: 600px;
   }
@@ -262,5 +292,11 @@ header nav li:last-child {
   }
   .hero a.btn {
     padding: 15px 40px;
+  }
+  .hero .background-image {
+    background-image: url('/img/heroM.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
   }
 }
