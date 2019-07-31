@@ -1,21 +1,57 @@
 .features{
-  background-color: #f7f7f7;
+  background-color: #384e77;
+}
+.features p {
+  color: whitesmoke;
+}
+
+ul.grid {
+  width: 80%;
+  display: flex;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #384e77;
+}
+
+
+.gridBox {
+  display: flex;
+  flex-direction: column;
+  background-color: #8bbeb2;
+  border: 3px dashed #0d0630;
+  margin: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.gridT {
+  display: flex;
+}
+.gridB{
+  display: flex;
+}
+.gridBox p {
+  margin: 0 2%;
 }
 
 .features .grid li{
-  padding: 0 30px;
+  padding: 0 10px;
   flex-basis: 33%;
   text-align: center;
 }
 
 .features .grid li i{
   font-size: 50px;
-  color: #2196F3;
+  color: #ef6f6c;
   margin-bottom: 25px;
 }
 
 .features .grid li h4{
-  color: #555;
+  color: ghostwhite;
   font-size: 20px;
   margin-bottom: 25px;
 }
@@ -49,6 +85,9 @@
 
 .contact{
   background-color: lightslategray;
+}
+.contact p {
+  color: whitesmoke;
 }
 
 .contact form{
