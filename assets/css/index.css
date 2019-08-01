@@ -728,3 +728,6 @@ li {
     z-index: -1;
   }
 }
+.thankyou .mainStuff h2 {
+  color: black;
+}
